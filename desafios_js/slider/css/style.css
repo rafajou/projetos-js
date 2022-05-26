@@ -1,0 +1,14 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+p{
+    display: none;
+    position: absolute;}
+
+p img{
+    width: 450px;
+    height: 300px;
+}
