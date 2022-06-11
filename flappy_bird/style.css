@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgb(35, 35, 78);
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+[wm-flappy] {
+    position: relative;
+    border: 5px solid dodgerblue;
+    height: 550px;
+    width: 1200px;
+    margin:auto;
+    background-color: deepskyblue;
+    overflow: hidden;
+}
+
+.passaro {
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 30px);
+    bottom: 50%;
+}
+
+.par-de-barreiras {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barreira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barreira .borda {
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #639301, #a2e82e);
+    border: 2px solid #000;
+}
+
+.barreira .corpo {
+    height: 140px;
+    width: 110px;
+    background: linear-gradient(90deg, #639301, #a2e82e);
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+}
+
+.progresso {
+    color: white;
+    position: absolute;
+    font-size: 40px;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+}
